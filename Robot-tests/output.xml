@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221018 11:06:05.263" rpa="true" schemaversion="3">
+<suite id="s1" name="Jarjestelmatestaus" source="C:\Users\zouna\Desktop\ohjelmistotestaus\harjoitustyo\keeptrack-ts\Robot-tests\jarjestelmatestaus.robot">
+<test id="s1-t1" name="Sivun rullaaminen, lisä projektien lataaminen ja ladatun projektin muokkaus" line="77">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:3000/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221018 11:06:05.455" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<status status="PASS" starttime="20221018 11:06:05.455" endtime="20221018 11:06:07.008"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221018 11:06:07.009" endtime="20221018 11:06:07.135"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/header/a[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:07.135" level="INFO">Clicking element 'xpath://*[@id="root"]/header/a[2]'.</msg>
+<status status="PASS" starttime="20221018 11:06:07.135" endtime="20221018 11:06:07.177"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/button</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221018 11:06:07.178" endtime="20221018 11:06:07.610"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221018 11:06:07.610" endtime="20221018 11:06:07.894"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:07.895" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[2]/div/div/button'.</msg>
+<status status="PASS" starttime="20221018 11:06:07.894" endtime="20221018 11:06:07.934"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 11:06:08.946" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221018 11:06:07.934" endtime="20221018 11:06:08.946"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[2]/div/div/button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20221018 11:06:08.946" endtime="20221018 11:06:09.226"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[1]/div[37]/div/section/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:09.228" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[1]/div[37]/div/section/button'.</msg>
+<status status="PASS" starttime="20221018 11:06:09.227" endtime="20221018 11:06:09.276"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="name"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:09.277" level="INFO">Clicking element 'xpath://*[@id="name"]'.</msg>
+<status status="PASS" starttime="20221018 11:06:09.277" endtime="20221018 11:06:09.310"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="name"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20221018 11:06:09.310" endtime="20221018 11:06:09.340"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="name"]</arg>
+<arg>Ladatun projektin otsikon vaihto</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:09.340" level="INFO">Typing text 'Ladatun projektin otsikon vaihto' into text field 'xpath://*[@id="name"]'.</msg>
+<status status="PASS" starttime="20221018 11:06:09.340" endtime="20221018 11:06:09.441"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="isActive"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:09.442" level="INFO">Clicking element 'xpath://*[@id="isActive"]'.</msg>
+<status status="PASS" starttime="20221018 11:06:09.442" endtime="20221018 11:06:09.507"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="budget"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:09.507" level="INFO">Clicking element 'xpath://*[@id="budget"]'.</msg>
+<status status="PASS" starttime="20221018 11:06:09.507" endtime="20221018 11:06:09.549"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_UP</arg>
+<arg>ARROW_UP</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221018 11:06:09.550" level="INFO">Sending key(s) ('ARROW_UP', 'ARROW_UP') to page.</msg>
+<msg timestamp="20221018 11:06:09.550" level="INFO">Pressing special key ARROW_UP to browser.</msg>
+<msg timestamp="20221018 11:06:09.550" level="INFO">Releasing special key ARROW_UP.</msg>
+<msg timestamp="20221018 11:06:09.556" level="INFO">Pressing special key ARROW_UP to browser.</msg>
+<msg timestamp="20221018 11:06:09.556" level="INFO">Releasing special key ARROW_UP.</msg>
+<status status="PASS" starttime="20221018 11:06:09.550" endtime="20221018 11:06:09.561"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[1]/div[37]/form/div/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:09.562" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[1]/div[37]/form/div/button[1]'.</msg>
+<status status="PASS" starttime="20221018 11:06:09.562" endtime="20221018 11:06:09.595"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 11:06:10.601" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221018 11:06:09.595" endtime="20221018 11:06:10.601"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div/div[1]/div[37]/div/section/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 11:06:10.603" level="INFO">Clicking element 'xpath://*[@id="root"]/div/div[1]/div[37]/div/section/a'.</msg>
+<status status="PASS" starttime="20221018 11:06:10.601" endtime="20221018 11:06:10.640"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 11:06:13.654" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221018 11:06:10.640" endtime="20221018 11:06:13.654"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221018 11:06:13.654" endtime="20221018 11:06:15.741"/>
+</kw>
+<status status="PASS" starttime="20221018 11:06:05.454" endtime="20221018 11:06:15.742"/>
+</test>
+<status status="PASS" starttime="20221018 11:06:05.263" endtime="20221018 11:06:15.743"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Jarjestelmatestaus">Jarjestelmatestaus</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
